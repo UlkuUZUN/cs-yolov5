@@ -1,0 +1,12 @@
+
+train: ./train/images
+val: ./valid/images
+
+# number of classes
+nc: 15
+
+# class names
+names: [ 'small-vehicle', 'large-vehicle','plane', 'storage-tank', 'ship','harbor',  'soccer-ball-field',
+ 'ground-track-field',  
+         'tennis-court','swimming-pool', 'baseball-diamond',  'roundabout', 'basketball-court', 'bridge',
+          'helicopter' ]
