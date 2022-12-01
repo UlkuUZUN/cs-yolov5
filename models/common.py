@@ -76,7 +76,7 @@ class Conv(nn.Module):
       output0 = self.conv(x)
       outputs.append(output0)
       (batcImg0,channelImg0,hImg0,wImg0)=output0.size()
-      print("cycle_spinning")   
+     # print("cycle_spinning")   
       for shift in all_shifts[1:]:
             padded = F.pad(x, (shift[0], shift[1], shift[2], shift[3]), mode='circular')
             (batch, channel, h, w) = padded.size()
